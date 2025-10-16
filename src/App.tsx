@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Button } from './components/ui/button';
-import { ConstellationBackground } from './components/ConstellationBackground';
 import { CaptureIcon, UnderstandIcon, ReconnectIcon } from './components/SolutionIcons';
 
 export default function App() {
@@ -11,7 +10,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#F7F5F1' }}>
+    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #F7F5F1 100%)' }}>
       {/* Header with glassmorphism */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 border-b border-white/20" style={{ boxShadow: '0 4px 24px rgba(124, 111, 214, 0.06)' }}>
         <div className="max-w-[1400px] mx-auto px-8 py-4 flex items-center justify-between">
@@ -104,7 +103,7 @@ export default function App() {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-black/10 hover:border-purple-300 rounded-full px-8 backdrop-blur-sm hover:bg-white/50"
+                  className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
                   style={{ fontSize: '16px', padding: '24px 32px' }}
                 >
                   ▶ See How It Works
@@ -126,10 +125,7 @@ export default function App() {
                   border: '1px solid rgba(255, 255, 255, 0.5)'
                 }}
               >
-                {/* Crystalline background */}
-                <div className="absolute inset-0">
-                  <ConstellationBackground />
-                </div>
+                {/* Background removed */}
 
                 {/* Contact list */}
                 <div className="relative z-10 space-y-4">
@@ -804,7 +800,7 @@ export default function App() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-black/10 hover:border-purple-300 rounded-full px-8 backdrop-blur-sm hover:bg-white/50"
+              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
             >
               💼 Book a Demo
             </Button>
@@ -1367,7 +1363,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 hover:border-purple-300 rounded-full backdrop-blur-sm hover:bg-white/50"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
               >
                 Start Free
               </Button>
@@ -1506,7 +1502,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 hover:border-purple-300 rounded-full backdrop-blur-sm hover:bg-white/50"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
               >
                 Explore Pro
               </Button>
@@ -1575,7 +1571,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 hover:border-purple-300 rounded-full backdrop-blur-sm hover:bg-white/50"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
               >
                 Book a Demo
               </Button>
