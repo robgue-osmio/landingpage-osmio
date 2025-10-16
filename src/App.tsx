@@ -35,13 +35,15 @@ export default function App() {
             <Button 
               variant="ghost" 
               className="text-[#6b6b6b] hover:text-[#1a1a1a]"
+              asChild
             >
-              Sign in
+              <a href="https://app.osmio.fr/login">Sign in</a>
             </Button>
             <Button 
               className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-6 shadow-lg shadow-purple-500/20"
+              asChild
             >
-              Start Free
+              <a href="https://app.osmio.fr/signup">Start Free</a>
             </Button>
           </div>
         </div>
@@ -92,22 +94,24 @@ export default function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                <Button 
-                  size="lg"
-                  className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-8 shadow-xl shadow-purple-500/25 transition-all hover:shadow-2xl hover:shadow-purple-500/30"
-                  style={{ fontSize: '16px', padding: '24px 32px' }}
-                >
-                  👉 Start Free — Bring Someone Back to Mind
-                </Button>
+            <Button 
+              size="lg"
+              className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-8 shadow-xl shadow-purple-500/25 transition-all hover:shadow-2xl hover:shadow-purple-500/30"
+              style={{ fontSize: '16px', padding: '24px 32px' }}
+              asChild
+            >
+              <a href="https://app.osmio.fr/signup">👉 Start Free — Bring Someone Back to Mind</a>
+            </Button>
                 
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
-                  style={{ fontSize: '16px', padding: '24px 32px' }}
-                >
-                  ▶ See How It Works
-                </Button>
+            <Button 
+              size="lg"
+              variant="outline"
+              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
+              style={{ fontSize: '16px', padding: '24px 32px' }}
+              asChild
+            >
+              <a href="https://app.osmio.fr/login">▶ See How It Works</a>
+            </Button>
               </div>
 
               <p style={{ fontSize: '14px', color: '#6b6b6b' }}>
@@ -794,15 +798,17 @@ export default function App() {
             <Button 
               size="lg"
               className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-8 shadow-xl shadow-purple-500/25"
+              asChild
             >
-              👉 Start Free
+              <a href="https://app.osmio.fr/signup">👉 Start Free</a>
             </Button>
             <Button 
               size="lg"
               variant="outline"
               className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
+              asChild
             >
-              💼 Book a Demo
+              <a href="https://app.osmio.fr/login">💼 Book a Demo</a>
             </Button>
           </div>
         </div>
@@ -1192,8 +1198,17 @@ export default function App() {
               size="lg"
               className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-8 shadow-2xl shadow-purple-500/40"
               style={{ fontSize: '16px', padding: '24px 32px' }}
+              asChild
             >
-              👉 Start Free — Begin Your Journey
+              <a href="https://app.osmio.fr/signup">👉 Start Free — Begin Your Journey</a>
+            </Button>
+            <Button 
+              size="lg"
+              className="bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full px-8 shadow-2xl shadow-purple-500/40"
+              style={{ fontSize: '16px', padding: '24px 32px' }}
+              asChild
+            >
+              <a href="https://app.osmio.fr/signup">👉 Start Free — Begin Your Journey</a>
             </Button>
             
             <Button 
@@ -1364,8 +1379,9 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
               <Button 
                 variant="outline"
                 className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                asChild
               >
-                Start Free
+                <a href="https://app.osmio.fr/signup">Start Free</a>
               </Button>
 
               <div className="space-y-3">
@@ -1433,8 +1449,9 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 className="w-full mb-8 bg-[#7C6FD6] hover:bg-[#6B5EC5] text-white rounded-full shadow-lg shadow-purple-500/25"
+                asChild
               >
-                Upgrade
+                <a href="https://app.osmio.fr/signup">Upgrade</a>
               </Button>
 
               <div className="space-y-3">
@@ -1503,8 +1520,9 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
               <Button 
                 variant="outline"
                 className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                asChild
               >
-                Explore Pro
+                <a href="https://app.osmio.fr/login">Explore Pro</a>
               </Button>
 
               <div className="space-y-3">
@@ -1572,8 +1590,9 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
               <Button 
                 variant="outline"
                 className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                asChild
               >
-                Book a Demo
+                <a href="https://app.osmio.fr/login">Book a Demo</a>
               </Button>
 
               <div className="space-y-3">
