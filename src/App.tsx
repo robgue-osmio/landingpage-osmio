@@ -50,7 +50,13 @@ export default function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      <section
+        className="pt-32 pb-20"
+        style={{
+          background:
+            'radial-gradient(1000px 600px at 80% -10%, rgba(124, 111, 214, 0.08), transparent 60%)',
+        }}
+      >
         <div className="max-w-[1400px] mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-xl">
@@ -100,23 +106,34 @@ export default function App() {
               style={{ fontSize: '16px', padding: '24px 32px' }}
               asChild
             >
-              <a href="https://app.osmio.fr/signup">👉 Start Free — Bring Someone Back to Mind</a>
+                  <a href="https://app.osmio.fr/signup" aria-label="Start free on Osmio">👉 Start Free — Bring Someone Back to Mind</a>
             </Button>
                 
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
+                  className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
               style={{ fontSize: '16px', padding: '24px 32px' }}
               asChild
             >
-              <a href="https://app.osmio.fr/login">▶ See How It Works</a>
+                  <a href="https://app.osmio.fr/login" aria-label="Book a demo">💼 Book a Demo</a>
             </Button>
               </div>
 
               <p style={{ fontSize: '14px', color: '#6b6b6b' }}>
                 No credit card. Just connection.
               </p>
+
+              {/* Social proof */}
+              <div className="mt-8 opacity-80">
+                <div className="text-xs uppercase tracking-wide text-[#6b6b6b] mb-3">Trusted by folks from</div>
+                <div className="flex flex-wrap items-center gap-6 text-[#a0a0a0]">
+                  <span style={{ fontWeight: 600 }}>Stripe</span>
+                  <span style={{ fontWeight: 600 }}>Figma</span>
+                  <span style={{ fontWeight: 600 }}>Notion</span>
+                  <span style={{ fontWeight: 600 }}>Sequoia</span>
+                </div>
+              </div>
             </div>
 
             {/* Hero card with crystalline background */}
