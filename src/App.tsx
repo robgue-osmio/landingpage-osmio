@@ -106,7 +106,7 @@ export default function App() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
+              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
               style={{ fontSize: '16px', padding: '24px 32px' }}
               asChild
             >
@@ -805,7 +805,7 @@ export default function App() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-black/80 hover:text-white"
+              className="border-2 border-black/10 rounded-full px-8 backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
               asChild
             >
               <a href="https://app.osmio.fr/login">💼 Book a Demo</a>
@@ -1378,7 +1378,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
                 asChild
               >
                 <a href="https://app.osmio.fr/signup">Start Free</a>
@@ -1519,7 +1519,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
                 asChild
               >
                 <a href="https://app.osmio.fr/login">Explore Pro</a>
@@ -1589,7 +1589,7 @@ function PricingPage({ onNavigate }: { onNavigate: () => void }) {
 
               <Button 
                 variant="outline"
-                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-black/80 hover:text-white"
+                className="w-full mb-8 border-2 border-black/10 rounded-full backdrop-blur-sm hover:bg-[#7C6FD6] hover:text-white hover:border-[#7C6FD6]/40"
                 asChild
               >
                 <a href="https://app.osmio.fr/login">Book a Demo</a>
